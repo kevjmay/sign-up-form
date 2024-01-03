@@ -61,6 +61,8 @@ body {
 }
 
 form {
+    display: flex;
+    justify-content: space-evenly;
     background-color: rgb(10, 75, 118);
     width: 50vw;
     height: 50vw;
@@ -75,6 +77,22 @@ form {
 .formbody {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.left {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.right {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.row {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .formHeader {
@@ -82,6 +100,7 @@ form {
     font-family: BeautySense;
     padding-left: 2%;
     font-size: 4rem;
+    text-decoration: underline;
 }
 
 .formText {
@@ -89,4 +108,36 @@ form {
     font-family: BeautySense;
     padding-left: 3%;
     font-size: 1.5rem;
+}
+
+ul li {
+    list-style-type: none;
+    font-family: BrettleySig;
+    font-size: 2rem;
+}
+
+input, label {
+    width: 200px;
+    color: rgb(235, 124, 165);
+    
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"]  {
+    background-color: rgb(147, 13, 64);
+    border-style: none;
+    border-radius: 10px;
+}
+
+button{
+    background-color: rgb(235, 156, 124);
+    color: rgb(59, 17, 106);
+    font-family: BeautySense;
+    font-size: 2rem;
+    padding: 14px;
+    margin: auto;
+    border-radius: 25px;
+    border-style: none;
 }
