@@ -1,0 +1,46 @@
+* {
+    /* border: 1px solid green; */
+    background-color: #691408;
+    color: #F2A78C;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    position: absolute;
+    left: 1%;
+    top: 5%;
+}
+
+.text {
+    position: absolute;
+    left: 1%;
+    top: 90%;
+    overflow: hidden;
+}
+
+.face {
+    width: 50vw;
+    height: 100vh;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+form {
+    background-color: bisque;
+}
+
+.full {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formbody {
+    display: flex;
+    flex-direction: row;
+}
