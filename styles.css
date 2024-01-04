@@ -141,3 +141,7 @@ button{
     border-radius: 25px;
     border-style: none;
 }
+
+input:focus, button:focus {
+    box-shadow: 6px 6px 2px 1px rgb(139, 158, 32);
+}

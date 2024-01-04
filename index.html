@@ -30,19 +30,19 @@
                             <div class="row">
                                 <li>
                                     <label for="fname">First Name </label>
-                                    <input type="text" name="fname" id="fname">
+                                    <input type="text" name="fname" id="fname" required>
                                 </li>
                             </div>
                             <div class="row">
                                 <li>
                                     <label for="email">Email </label>
-                                    <input type="email" name="email" id="email">
+                                    <input type="email" name="email" id="email" required>
                                 </li>
                             </div>
                             <div class="row">
                                 <li>
                                     <label for="pwd">Password </label>
-                                    <input type="password" name="password" id="pwd">
+                                    <input type="password" name="password" id="pwd" required>
                                 </li>
                             </div>
                         </ul>
@@ -52,19 +52,19 @@
                             <div class="row">
                                 <li>
                                     <label for="lname">Last Name </label>
-                                    <input type="text" name="lname" id="lname">
+                                    <input type="text" name="lname" id="lname" required>
                                 </li>
                             </div>
                             <div class="row">
                                 <li>
                                     <label for="phone">Phone </label>
-                                    <input type="tel" name="phone" id="phone">
+                                    <input type="tel" name="phone" id="phone" required>
                                 </li>
                             </div>
                             <div class="row">
                                 <li>
                                     <label for="cpwd">Confrim Password </label>
-                                    <input type="password" name="cpassword" id="cpwd">
+                                    <input type="password" name="cpassword" id="cpwd" required>
                                 </li>
                             </div>
                         </ul>
@@ -80,6 +80,26 @@
             </div>
         </form>
     </main>
+    <script>
+
+        //Password field validation:
+        const pwd = document.getElementById("pwd");
+        const cpwd = document.getElementById("cpwd");
+
+        function validatePassword() {
+            if (pwd.value != cpwd.value) {
+                cpwd.setCustomValidity("Passwords Don't Match");
+                console.log(pwd.value, cpwd.value)
+            } else {
+                cpwd.setCustomValidity("");
+                console.log(pwd.value, cpwd.value)
+            }
+        };
+
+        pwd.onchange = validatePassword;
+        cpwd.onkeyup = validatePassword;
+
+    </script>
     
 </body>
 </html>
